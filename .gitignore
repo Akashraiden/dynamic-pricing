@@ -139,6 +139,7 @@ env.bak/
 venv.bak/
 datafile/
 data/
+notebook/data/
 
 
 
