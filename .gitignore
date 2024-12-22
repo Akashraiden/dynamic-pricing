@@ -137,7 +137,8 @@ venv/
 ENV/
 env.bak/
 venv.bak/
-
+datafile/
+notebook/
 # Spyder project settings
 .spyderproject
 .spyproject
