@@ -16,7 +16,7 @@ from src.utils import save_object
 
 @dataclass
 class DataTransformationConfig:
-    preprocessor_obj_file_path=os.path.join("datafile","proprocessor.pkl")
+    preprocessor_obj_file_path=os.path.join('datafile',"proprocessor.pkl")
 
 class DataTransformation:
     def __init__(self):
@@ -28,7 +28,7 @@ class DataTransformation:
         
         '''
         try:
-            numerical_columns = ["Competitor_Price", "Profit_Margin","Inventory_Level","Inventory_Risk","Adjusted_Elasticity"]
+            numerical_columns = ['Competitor_Price', 'Profit_Margin', 'Inventory_Level', 'Inventory_Risk', 'Adjusted_Elasticity']
             categorical_columns = [
                 "Category",
                 "Green_Certification_Label",
@@ -83,7 +83,7 @@ class DataTransformation:
             preprocessing_obj=self.get_data_transformer_object()
 
             target_column_name="Base_Price"
-            numerical_columns = ["Competitor_Price", "Profit_Margin","Inventory_Level","Inventory_Risk","Adjusted_Elasticity"]
+            numerical_columns = ['Competitor_Price', 'Profit_Margin', 'Inventory_Level', 'Inventory_Risk', 'Adjusted_Elasticity']
 
             input_feature_train_df=train_df.drop(columns=[target_column_name],axis=1)
             target_feature_train_df=train_df[target_column_name]
