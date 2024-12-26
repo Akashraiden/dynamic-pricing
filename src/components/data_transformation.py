@@ -32,6 +32,7 @@ class DataTransformation:
             categorical_columns = [
                 "Category",
                 "Green_Certification_Label",
+                "Product_Name",
             ]
 
             num_pipeline= Pipeline(
