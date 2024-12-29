@@ -22,3 +22,21 @@
             Applied advanced techniques like interpolation or predictive imputation where necessary.'''
 
 ![alt text](image-3.png)
+
+#### Handling Outliers
+
+![alt text](image-5.png)
+
+#### Feature Engineering
+
+![alt text](image-4.png)
+
+![alt text](image-6.png)
+
+#### Data Visualizations
+
+![alt text](image-7.png)
+
+![alt text](image-8.png)
+
+![alt text](image-9.png)
