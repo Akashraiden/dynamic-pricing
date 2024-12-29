@@ -4,39 +4,29 @@
 
 #### This project focuses on developing an AI-powered dynamic pricing system tailored for sustainable product markets. The goal is to optimize pricing strategies in real-time, balancing profitability with sustainability and consumer fairness.
 
-#### Used Dataset
+#### Prediction interface
 
-![alt text](image-2.png)
+![alt text](image-11.png)
 
-#### Checking of Null values , if null was found in dataset then we can use some techniques
+![alt text](image-12.png)
 
-##### Identifying Missing Values:
+#### MOdels Performace
 
-         '''[Checked for missing values using tools like isnull() or info(). Handling Strategy:]
+Model Performance: Model  R² Score       MAE      RMSE
+       Linear Regression  0.735834  9.977805 12.718195
+           Decision Tree  0.981326  2.158327  3.381436
+           Random Forest  0.990620  1.382423  2.396609
+       Gradient Boosting  0.978360  2.776571  3.640159
+Support Vector Regressor  0.033203 20.816788 24.330714
 
-            Dropping Missing Values: Removed rows or columns where a significant portion of data was missing and couldn't be imputed.
-            Imputation:
+#### Best Model found is Random Forest 
 
-            Used mean/median for numerical columns.
-            Used mode for categorical columns.
-            Applied advanced techniques like interpolation or predictive imputation where necessary.'''
+Random Forest  0.990620  1.382423  2.396609
 
-![alt text](image-3.png)
+![alt text](image-13.png)
 
-#### Handling Outliers
+![alt text](image-14.png)
 
-![alt text](image-5.png)
+#### Accuracy 
 
-#### Feature Engineering
-
-![alt text](image-4.png)
-
-![alt text](image-6.png)
-
-#### Data Visualizations
-
-![alt text](image-7.png)
-
-![alt text](image-8.png)
-
-![alt text](image-9.png)
+Model Accuracy: 99.06%
