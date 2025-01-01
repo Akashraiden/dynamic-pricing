@@ -38,7 +38,8 @@ For a detailed breakdown of the **EDA** process, including the code, visualizati
 During the feature engineering phase, several transformations were applied to improve the model's performance:
 - **Creating new features** such as `Adjusted_Elasticity` and `Competitor_Price_Difference` to better capture market dynamics.
 - **Encoding categorical variables** like `Category` and `Green_Certification` using **one-hot encoding**, **label encoding**, and leveraging **CatBoost** for native handling.
-- **Scaling continuous variables** such as `Base_Price` and `Inventory_Level` using **Min-Max scaling**.
+**Standard Scaling** was applied to continuous variables: `Competitor_Price`, `Profit_Margin`, `Inventory_Level`, `Inventory_Risk`, and `Adjusted_Elasticity` to standardize them. This transformation removes the mean and scales the data to unit variance.
+.
 
 The detailed feature engineering steps and code for these transformations are available in the `eda.ipynb` file. Please refer to it for a comprehensive view of the process.
 
