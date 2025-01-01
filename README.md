@@ -50,7 +50,6 @@ This project utilizes several machine learning models for demand prediction and 
 - **GradientBoostingRegressor**: A machine learning technique for regression tasks using an ensemble of decision trees.
 - **RandomForestRegressor**: An ensemble method that builds multiple decision trees and averages their predictions.
 - **LinearRegression**: A linear approach to modeling the relationship between the target variable and one or more features.
-- **KNeighborsRegressor**: A regression technique that predicts the target based on the closest training examples in the feature space.
 - **DecisionTreeRegressor**: A decision tree algorithm for regression tasks.
 - **XGBRegressor**: A gradient boosting method, optimized for speed and performance in regression tasks.
 
@@ -109,6 +108,44 @@ This project follows an **end-to-end** approach, including data ingestion, data 
 - **`utils.py`**: Includes helper functions used throughout the project, such as loading configuration settings, saving models, and making predictions.
 - **`app.py`**: The main script that ties all the components together, running the data ingestion, transformation, model training, and predictions in a sequential manner.
 
-## Conclusion
 
-This project demonstrates how to leverage machine learning to create a dynamic pricing model for sustainable products. By incorporating factors like demand elasticity, competitor pricing, and eco-friendly certifications, the goal is to optimize pricing strategies in a competitive market. For more details, refer to the associated Jupyter notebook files and scripts.
+## Results
+
+
+
+## Model Performance
+
+The models were evaluated using key performance metrics, including **R² Score**, **Mean Absolute Error (MAE)**, and **Root Mean Squared Error (RMSE)**. Below is a summary of their performance:
+
+| **Model**                | **R² Score** | **MAE**       | **RMSE**      |
+|--------------------------|--------------|---------------|---------------|
+| **Linear Regression**     | 0.7855       | 9.0011        | 11.5675       |
+| **Decision Tree**         | 0.9882       | 1.8701        | 2.7130        |
+| **Random Forest**         | 0.9950       | 1.0652        | 1.7672        |
+| **Gradient Boosting**     | 0.9869       | 2.2622        | 2.8559        |
+| **Support Vector Regressor** | 0.9393     | 4.3349        | 6.1537        |
+| **XGBoost**               | 0.9963       | 1.1372        | 1.5143        |
+| **CatBoost**              | 0.9988       | 0.6492        | 0.8603        |
+| **AdaBoost**              | 0.8717       | 7.1752        | 8.9442        |
+
+### Key Observations:
+- **CatBoost** achieved the best overall performance, with the highest **R² score (0.9988)** and the lowest errors (**MAE: 0.6492**, **RMSE: 0.8603**), making it the most effective model for predicting **Base_Price**.
+- **XGBoost** also performed exceptionally well, with an **R² score of 0.9963**, **MAE: 1.1372**, and **RMSE: 1.5143**, making it a strong competitor to CatBoost.
+- **Random Forest** and **Gradient Boosting** also delivered high performance, demonstrating good predictive power with **R² scores** of **0.9950** and **0.9869**, respectively.
+- **AdaBoost** and **Support Vector Regressor** showed relatively weaker performance with **R² scores** of **0.8717** and **0.9393**, and high error metrics (**MAE** and **RMSE**), suggesting they are not as suitable for this task.
+
+
+### Conclusion:
+
+Best Model found **CatBoost_Regressor** 
+
+Accurarcy **98.05**
+
+| **Actual Value** | **Predicted Value** | **Difference** |
+|-------------------|---------------------|----------------|
+| **1714**          | 38.98               | 38.5119        | 0.4681         |
+| **1673**          | 12.74               | 12.5438        | 0.1962         |
+| **4029**          | 88.62               | 88.5068        | 0.1132         |
+| **511**           | 36.92               | 37.2829        | -0.3629        |
+| **843**           | 21.72               | 21.5549        | 0.1651         |
+
