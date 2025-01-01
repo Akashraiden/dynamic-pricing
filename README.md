@@ -153,4 +153,4 @@ Accurarcy **98.05**
 #### Utilized Streamlit for designing an interactive and user-friendly web interface.
 
 
-<img src="images\Screenshot 2025-01-01 233912.png" alt="Image Description" width="300" height="200">
+<img src="images\Screenshot 2025-01-01 233912.png" alt="Image Description" width="500" height="500">
