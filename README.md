@@ -150,3 +150,7 @@ Accurarcy **98.05**
 | **511**           | 36.92               | 37.2829        | -0.3629        |
 | **843**           | 21.72               | 21.5549        | 0.1651         |
 
+#### Utilized Streamlit for designing an interactive and user-friendly web interface.
+
+
+<img src="images\Screenshot 2025-01-01 233912.png" alt="Image Description" width="300" height="200">
