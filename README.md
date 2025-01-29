@@ -1,4 +1,4 @@
-# AI-Driven Dynamic Pricing for Sustainable Product Markets
+# ML-Driven Dynamic Pricing for Sustainable Product Markets
 
 ## Overview
 
